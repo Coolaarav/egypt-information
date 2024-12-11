@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ancient Egypt</title>
+    <style>
+        #content {
+            display: none; /* Hide the content by default */
+        }
+    </style>
+    <script>
+        // Password protection
+        function checkPassword() {
+            const password = "12345678"; // Set your password here
+            const userInput = prompt("Enter the password to access this page:");
+            if (userInput === password) {
+                document.getElementById("content").style.display = "block"; // Show the content
+            } else {
+                alert("Incorrect password. You cannot access this page.");
+                document.body.innerHTML = "<h1>Access Denied</h1>";
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+    <div id="content">
+        <h1>ANCIENT EGYPT</h1>
+        <h2>
+            Ancient Egypt, a civilization thriving along the fertile banks of the Nile River from around 3100 BCE to 30 BCE, 
+            is renowned for its monumental architecture, cultural advancements, and profound influence on history. Governed by 
+            powerful pharaohs, regarded as divine intermediaries, it witnessed remarkable achievements in art, science, and religion.
+
+            The Egyptians constructed awe-inspiring structures like the Great Pyramids of Giza and the Sphinx, symbolizing 
+            their architectural ingenuity and deep spiritual beliefs in the afterlife. They developed a complex writing 
+            system, hieroglyphics, to document religious texts, administrative records, and literature.
+
+            Their society was highly stratified, with roles ranging from farmers and artisans to priests and nobles, all 
+            contributing to the civilization's sustainability. The Nile played a central role, providing water, enabling 
+            agriculture, and serving as a vital transportation route.
+
+            Ancient Egypt's pantheon of gods and goddesses, such as Ra, Osiris, and Isis, influenced every aspect of life. 
+            Its medical practices, calendar system, and understanding of geometry and astronomy laid foundations for future civilizations.
+
+            The civilization's decline began with foreign invasions, ultimately ending with Roman conquest. However, its 
+            legacy endures, captivating the world through its mysteries, art, and profound contributions to human history.
+        </h2>
+
+        <h1>You can see some images below</h1>
+        <img src="Downloads/ancient egypt pic 3.jpg" alt="The Sphinx">
+        <img src="Downloads/ancient egypt pic 2.jpg" alt="The Pyramids">
+        <img src="Downloads/ancient img pic 1 vs studio project.jpg" alt="Ancient drawings">
+        <a href="https://www.youtube.com/watch?v=3ZdXVjTIg3E&pp=ygUNQU5JQ0VOVCBFR1lQVA%3D%3D">
+            <h1>Click here to learn more about Ancient Egypt</h1>
+        </a>
+    </div>
+</body>
+</html>
